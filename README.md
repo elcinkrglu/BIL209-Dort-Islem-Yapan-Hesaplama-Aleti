@@ -1,0 +1,1 @@
+# Dort-Islem-Yapan-Hesaplama-Aleti
