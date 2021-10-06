@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="tr">
+        <meta charset="utf-8">
+        <link rel = "stylesheet" type="text/css" href = "style.css" />
+        <title> 4 İşlem Hesap Makinesi</title>
+        <script type= "text/javascript">
+
+        function toplama() {
+            var sayi1 = parseInt(document.getElementById('birinciSayi').value);
+            var sayi2 = parseInt(document.getElementById('ikinciSayi').value);
+            document.getElementById( 'sonuc' ).value = sayi1 + sayi2;
+        }
+        function carpma() {
+            var sayi1 = parseInt(document.getElementById('birinciSayi').value);
+            var sayi2 = parseInt(document.getElementById('ikinciSayi').value);
+            document.getElementById( 'sonuc' ).value = sayi1 * sayi2;
+        }
+        function cikarma() {
+            var sayi1 = parseInt(document.getElementById('birinciSayi').value);
+            var sayi2 = parseInt(document.getElementById('ikinciSayi').value);
+            document.getElementById( 'sonuc' ).value = sayi1 - sayi2;
+        }
+        function bolme() {
+            var sayi1 = parseInt(document.getElementById('birinciSayi').value);
+            var sayi2 = parseInt(document.getElementById('ikinciSayi').value);
+            document.getElementById('sonuc').value = sayi1 / sayi2;
+        }
+    </script>
+
+    </head>
+    <body>
+        <form class="box">
+        <h1>Hoşgeldiniz!</h1>
+       <h2 >DÖRT İŞLEM HESAP MAKİNESİ </h2><br /><br /><br />
+        <input type ="text" id="birinciSayi" />
+        <input type = "text"  id="ikinciSayi"/>
+       <br />
+       <input type="button" value="+" id="arti" onclick="toplama()"/>
+       <input type="button" value="-" id="eksi" onclick="cikarma()"/>
+       <input type="button" value="*" id="carpi" onclick="carpma()"/>
+       <input type="button" value="/" id="bolu" onclick="bolme()"/> <br /><br /><br />
+       <h3>SONUÇ</h3><br /><input type="text" id="sonuc"/>
+       <h4>Elçin Köroğlu<br /> 200601054<br /> BİL209 Web Tabanlı Programlamaya Giriş</h4>
+    </form>
+       
+    
+    </body>
+    </html>
